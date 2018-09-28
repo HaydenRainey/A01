@@ -27,7 +27,7 @@
 
 .leftCenterCol{
     float: none;
-    margin: 0 20px 0 25%;
+    margin: 0 20px 0 20%;
     
 }
 
@@ -53,8 +53,13 @@
 
 /*Site Content*/
 
+nav{
+    border-bottom: solid 4px #a0a0a0;
+    box-shadow: 3px 0px 10px #2c3e50;
+}
+
 aside { 
-    width: 14em; 
+    width: 12em; 
     border: solid 2px #b6b6b6;
     border-radius: 10px;
     padding: 10px;
@@ -95,6 +100,7 @@ aside h2{
     border: 6px solid #2c3e50;
     border-radius: 10px;
     padding: 0px;
+    box-shadow: 3px 3px 10px #2c3e50;
 
 	display: grid;
 	grid-template: repeat(3, 1fr) / repeat(3, 1fr);
@@ -109,6 +115,10 @@ aside h2{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.game-board .box:hover{
+    background-color: #3d566e;
 }
 
 /*media querries*/ 
