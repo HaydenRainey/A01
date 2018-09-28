@@ -1,0 +1,135 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+/*UTILITY*/
+/* restricts img height to 200 x 200 and rounds
+   corners to make circle photo */
+#PP-Lg{
+    width: 200px; 
+    height: 200px;
+    border:solid 5px;
+    border-color: #363131;
+    border-radius: 100px 100px;
+    margin-left: 30%;
+    margin-top: 10%;
+}
+
+#userBg{
+    background-image: url("../img/mountain.jpg");
+    background-position: top;
+    background-repeat: repeat-x;
+    
+}
+
+.leftCenterCol{
+    float: none;
+    margin: 0 20px 0 25%;
+    
+}
+
+.tranBlack{
+    box-shadow: 0 0 10px 5px #363131;
+    background: rgba(54, 49, 49, 0.7);
+    width: 70%; 
+    margin-top: 30px;
+    border-radius: 5px 5px;
+}
+
+.horizontal-center{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 auto;
+}
+
+.noPadding{
+    padding: 0px;
+}
+
+
+
+/*Site Content*/
+
+aside { 
+    width: 14em; 
+    border: solid 2px #b6b6b6;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 3px 3px 10px #2c3e50;
+}
+
+/*contact page*/
+
+form{
+    width: 600px;
+    margin: 0 auto;
+}
+
+/*Typeography*/ 
+*{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+h1{
+    color: white !important;
+    text-align: center;
+    margin-top: 15%;
+}
+
+aside h2{
+    text-align: center;
+}
+
+
+
+
+/*-----GameBoard-----*/
+.game-board{
+    width: 400px;
+	height: 400px;
+	margin: 0 auto;
+    background-color: #34495e;
+    color: #fff;
+    border: 6px solid #2c3e50;
+    border-radius: 10px;
+    padding: 0px;
+
+	display: grid;
+	grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+}
+
+.game-board .box{
+    border: 6px solid #2c3e50;
+  border-radius: 2px;
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*media querries*/ 
+@media screen and (max-width: 600px) {
+    .leftCenterCol{
+        margin: 0px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
