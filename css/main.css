@@ -146,6 +146,23 @@ aside h2{
     background-color: #3d566e;
 }
 
+#winBanner{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center; 
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    font-size: 2em;
+}
+
+#winBanner h1{
+    position: absolute;
+    margin: 40%;
+}
+
 /*media querries*/ 
 @media screen and (max-width: 600px) {
     .leftCenterCol{
