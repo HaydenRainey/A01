@@ -16,6 +16,7 @@ let TTT = function () {
         huPlayer = "O";
         aiPlayer = "X";
         initInput();
+        
     },
 
     //resets all box values to empty strings 
