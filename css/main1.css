@@ -3,6 +3,11 @@
     float: right;
 }
 
+.p-contain{
+    margin: 0 40px;
+    line-height: 2
+}
+
 .cont-h{
     display: flex;
 }
