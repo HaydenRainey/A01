@@ -6,6 +6,7 @@ let TTT = function () {
     bVals,
     fc,
     turn,
+    miniOpen = 0,
     bestSpot;
 
     //starts game and initializes variables and event listeners 
@@ -20,11 +21,18 @@ let TTT = function () {
     },
 
     //resets all box values to empty strings 
-    restart = function(){
-        for(let i=0; i < bLoc.length; i++){
-            $(bLoc[i]).html("");
+    reset = function(){
+        console.log("inside restart");
+        if(bLoc != undefined){
+            for(let i=0; i < bLoc.length; i++){
+                $(bLoc[i]).html("");
+                $(bVals[i])
+            }
+            start();
         }
-        start();
+        
+        
+        console.log("MiniMax instances: " + miniOpen)
     },
     //initialized event listeners 
     initInput = function(){
@@ -101,9 +109,9 @@ let TTT = function () {
         const vals = []; 
 
         for(let i = 0; i< bLoc.length; i++){
-            let l = $(bLoc[i]).html(); 
-            if(l != ""){
-                vals.push(l);
+            let val = $(bLoc[i]).html(); 
+            if(val != ""){
+                vals.push(val);
             }
             else{
                 vals.push(i);
@@ -147,13 +155,13 @@ let TTT = function () {
 
         return bestSpot.index;
     },
-
+    
     //minimax function curtesy of Ahmad Abdolsaheb of FreeCodeCamp.org
     //https://medium.freecodecamp.org/how-to-make-your-tic-tac-toe-game-unbeatable-by-using-the-minimax-algorithm-9d690bad4b37
     //recursive function that checks each potential move and returns a score. Moves with the highest score are returned. 
     minimax = function (newBoard, player) {
         fc++
-
+        miniOpen += 1
         let availSpots = emptyIndexies(newBoard);
 
         if (winning(newBoard, huPlayer)) {
@@ -235,6 +243,6 @@ let TTT = function () {
 
     return{
         start: start,
-        restart: restart
+        reset: reset
     };
 } ();
