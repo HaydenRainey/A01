@@ -12,11 +12,12 @@
     display: flex;
 }
 
-.temp-img{
-    width: 99%;
-    height: 60%;
+.img{
+    width: 250px;
+    height: 250px;
     margin: auto;
-    background-color: lightgrey;
+    background-image: url(../img/tic.png);
+    background-repeat: no-repeat;
 }
 
 #PP-Lg{
